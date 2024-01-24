@@ -1,0 +1,131 @@
+###Comandos del ejercicio 1:
+
+# Configurar nombre de usuario
+git config --global user.name "Tu Nombre"
+
+# Configurar correo electrónico
+git config --global user.email "tu@email.com"
+
+# Activar coloreado de salida
+git config --global color.ui auto
+
+# Mostrar configuración final
+git config --list
+
+# Crear un nuevo repositorio
+git init libro
+
+# Entrar al directorio del repositorio
+cd libro
+
+# Mostrar contenido del repositorio
+ls
+
+# Comprobar estado del repositorio
+git status
+
+# Crear el fichero indice.txt y añadir contenido
+echo "Capítulo 1: Introducción a Git" > indice.txt
+echo "Capítulo 2: Flujo de trabajo básico" >> indice.txt
+echo "Capítulo 3: Repositorios remotos" >> indice.txt
+
+# Comprobar estado del repositorio después de crear el fichero
+git status
+
+# Añadir el fichero a la zona de intercambio temporal
+git add indice.txt
+
+# Comprobar estado del repositorio después de añadir el fichero
+git status
+
+# Realizar un commit con el mensaje especificado
+git commit -m "Añadido índice del libro"
+
+# Ver estado del repositorio después del commit
+git status
+
+# Modificar el contenido del fichero indice.txt
+echo "Capítulo 1: Introducción a Git" > indice.txt
+echo "Capítulo 2: Flujo de trabajo básico" >> indice.txt
+echo "Capítulo 3: Gestión de ramas" >> indice.txt
+echo "Capítulo 4: Repositorios remotos" >> indice.txt
+
+# Mostrar los cambios
+git diff
+
+# Hacer un commit con el mensaje especificado
+git commit -m "Añadido capítulo 3 sobre gestión de ramas"
+
+# Ver estado del repositorio después del commit
+git status
+
+# Mostrar los cambios de la última versión con respecto a la anterior
+git log -p -1
+
+# Cambiar el mensaje del último commit
+git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice."
+
+# Volver a mostrar los últimos cambios del repositorio
+git log -p -1
+
+###Comandos del ejercicio 2:
+
+# Mostrar el historial de cambios del repositorio
+git log
+
+# Crear la carpeta capitulos y el fichero capitulo1.txt
+mkdir capitulos
+echo "Git es un sistema de control de versiones ideado por Linus Torvalds." > capitulos/capitulo1.txt
+
+# Añadir los cambios a la zona de intercambio temporal
+git add capitulos/capitulo1.txt
+
+# Hacer un commit de los cambios con el mensaje “Añadido capítulo 1.”
+git commit -m "Añadido capítulo 1."
+
+# Mostrar el historial de cambios del repositorio
+git log
+
+# Crear el fichero capitulo2.txt en la carpeta capitulos
+echo "El flujo de trabajo básico con Git consiste en:" > capitulos/capitulo2.txt
+echo "1- Hacer cambios en el repositorio." >> capitulos/capitulo2.txt
+echo "2- Añadir los cambios a la zona de intercambio temporal." >> capitulos/capitulo2.txt
+echo "3- Hacer un commit de los cambios." >> capitulos/capitulo2.txt
+
+# Añadir los cambios a la zona de intercambio temporal
+git add capitulos/capitulo2.txt
+
+# Hacer un commit de los cambios con el mensaje “Añadido capítulo 2.”
+git commit -m "Añadido capítulo 2."
+
+# Mostrar las diferencias entre la última versión y dos versiones anteriores
+git diff HEAD~2 HEAD
+
+# Crear el fichero capitulo3.txt en la carpeta capitulos
+echo "Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas." > capitulos/capitulo3.txt
+
+# Añadir los cambios a la zona de intercambio temporal
+git add capitulos/capitulo3.txt
+
+# Hacer un commit de los cambios con el mensaje “Añadido capítulo 3.”
+git commit -m "Añadido capítulo 3."
+
+# Mostrar las diferencias entre la primera y la última versión del repositorio
+git diff HEAD~2 HEAD
+
+# Añadir al final del fichero indice.txt la línea: Capítulo 5: Conceptos avanzados
+echo "Capítulo 5: Conceptos avanzados" >> indice.txt
+
+# Añadir los cambios a la zona de intercambio temporal
+git add indice.txt
+
+# Hacer un commit de los cambios con el mensaje “Añadido capítulo 5 al índice.”
+git commit -m "Añadido capítulo 5 al índice."
+
+# Mostrar quién ha hecho cambios sobre el fichero indice.txt
+git blame indice.txt
+
+#Subir todo a GitHub
+git remote add https://github.com/iRoot13x18/Libro
+git push 
+
