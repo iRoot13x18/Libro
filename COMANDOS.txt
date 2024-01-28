@@ -1,5 +1,12 @@
-###Comandos del ejercicio 1:
 
+  ______     _ ______ _____   _____ _____ _____ _____ ____    __ 
+ |  ____|   | |  ____|  __ \ / ____|_   _/ ____|_   _/ __ \  /_ |
+ | |__      | | |__  | |__) | |      | || |      | || |  | |  | |
+ |  __| _   | |  __| |  _  /| |      | || |      | || |  | |  | |
+ | |___| |__| | |____| | \ \| |____ _| || |____ _| || |__| |  | |
+ |______\____/|______|_|  \_\\_____|_____\_____|_____\____/   |_|
+                                                                 
+                                                                 
 # Configurar nombre de usuario
 git config --global user.name "Tu Nombre"
 
@@ -68,7 +75,16 @@ git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice."
 # Volver a mostrar los últimos cambios del repositorio
 git log -p -1
 
-###Comandos del ejercicio 2:
+
+  ______     _ ______ _____   _____ _____ _____ _____ ____    ___  
+ |  ____|   | |  ____|  __ \ / ____|_   _/ ____|_   _/ __ \  |__ \ 
+ | |__      | | |__  | |__) | |      | || |      | || |  | |    ) |
+ |  __| _   | |  __| |  _  /| |      | || |      | || |  | |   / / 
+ | |___| |__| | |____| | \ \| |____ _| || |____ _| || |__| |  / /_ 
+ |______\____/|______|_|  \_\\_____|_____\_____|_____\____/  |____|
+                                                                   
+                                                                   
+
 
 # Mostrar el historial de cambios del repositorio
 git log
@@ -128,4 +144,96 @@ git blame indice.txt
 #Subir todo a GitHub
 git remote add https://github.com/iRoot13x18/Libro
 git push 
+
+
+  ______     _ ______ _____   _____ _____ _____ _____ ____    ____  
+ |  ____|   | |  ____|  __ \ / ____|_   _/ ____|_   _/ __ \  |___ \ 
+ | |__      | | |__  | |__) | |      | || |      | || |  | |   __) |
+ |  __| _   | |  __| |  _  /| |      | || |      | || |  | |  |__ < 
+ | |___| |__| | |____| | \ \| |____ _| || |____ _| || |__| |  ___) |
+ |______\____/|______|_|  \_\\_____|_____\_____|_____\____/  |____/ 
+                                                                    
+                                                                    
+# Crear una nueva rama llamada "bibliografia"
+git branch bibliografia
+
+# Mostrar las ramas del repositorio
+git branch
+
+# Crear el fichero capitulos/capitulo4.txt y añadir el texto
+echo "Contenido del capítulo 4." > capitulos/capitulo4.txt
+
+# Añadir los cambios a la zona de intercambio temporal
+git add capitulos/capitulo4.txt
+
+# Hacer un commit con el mensaje "Añadido capítulo 4."
+git commit -m "Añadido capítulo 4."
+
+# Mostrar la historia del repositorio incluyendo todas las ramas
+git log --all --graph --oneline
+
+# Cambiar a la rama "bibliografia"
+git checkout bibliografia
+
+# Crear el fichero bibliografia.txt y añadir la referencia
+echo "Chacon, S. and Straub, B. Pro Git. Apress." > bibliografia.txt
+
+# Añadir los cambios a la zona de intercambio temporal
+git add bibliografia.txt
+
+# Hacer un commit con el mensaje "Añadida primera referencia bibliográfica."
+git commit -m "Añadida primera referencia bibliográfica."
+
+# Mostrar la historia del repositorio incluyendo todas las ramas
+git log --all --graph --oneline
+
+# Cambiar a la rama "master"
+git checkout master
+
+# Fusionar la rama "bibliografia" con la rama "master"
+git merge bibliografia
+
+# Mostrar la historia del repositorio incluyendo todas las ramas
+git log --all --graph --oneline
+
+# Eliminar la rama "bibliografia"
+git branch -d bibliografia
+
+# Mostrar de nuevo la historia del repositorio incluyendo todas las ramas
+git log --all --graph --oneline
+
+# Crear y cambiar a la rama "bibliografia"
+git branch bibliografia
+git checkout bibliografia
+
+# Cambiar el fichero bibliografia.txt con nuevas referencias
+echo "Scott Chacon and Ben Straub. Pro Git. Apress." > bibliografia.txt
+echo "Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014)" >> bibliografia.txt
+
+# Añadir los cambios a la zona de intercambio temporal y hacer un commit
+git add bibliografia.txt
+git commit -m "Añadida nueva referencia bibliográfica."
+
+# Cambiar a la rama "master"
+git checkout master
+
+# Cambiar el fichero bibliografia.txt con otras referencias
+echo "Chacon, S. and Straub, B. Pro Git. Apress." > bibliografia.txt
+echo "Loeliger, J. and McCullough, M. Version control with Git. O’Reilly." >> bibliografia.txt
+
+# Añadir los cambios a la zona de intercambio temporal y hacer un commit
+git add bibliografia.txt
+git commit -m "Añadida nueva referencia bibliográfica."
+
+# Fusionar la rama "bibliografia" con la rama "master" (puede causar conflicto)
+git merge bibliografia
+
+# Resolver el conflicto dejando el fichero bibliografia.txt con las referencias correctas
+# Después, añadir los cambios a la zona de intercambio temporal y hacer un commit
+git add bibliografia.txt
+git commit -m "Resuelto conflicto de bibliografía."
+
+# Mostrar la historia del repositorio incluyendo todas las ramas
+git log --all --graph --oneline
+
 
