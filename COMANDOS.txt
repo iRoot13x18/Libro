@@ -1,11 +1,14 @@
 
-  ______     _ ______ _____   _____ _____ _____ _____ ____    __ 
- |  ____|   | |  ____|  __ \ / ____|_   _/ ____|_   _/ __ \  /_ |
- | |__      | | |__  | |__) | |      | || |      | || |  | |  | |
- |  __| _   | |  __| |  _  /| |      | || |      | || |  | |  | |
- | |___| |__| | |____| | \ \| |____ _| || |____ _| || |__| |  | |
- |______\____/|______|_|  \_\\_____|_____\_____|_____\____/   |_|
-                                                                 
+#    ______        _   ______   _____     _____   _____    _____   _____    ____      __ 
+#   |  ____|      | | |  ____| |  __ \   / ____| |_   _|  / ____| |_   _|  / __ \    /_ |
+#   | |__         | | | |__    | |__) | | |        | |   | |        | |   | |  | |    | |
+#   |  __|    _   | | |  __|   |  _  /  | |        | |   | |        | |   | |  | |    | |
+#   | |____  | |__| | | |____  | | \ \  | |____   _| |_  | |____   _| |_  | |__| |    | |
+#   |______|  \____/  |______| |_|  \_\  \_____| |_____|  \_____| |_____|  \____/     |_|
+#                                                                                        
+#                                                                                        
+
+
                                                                  
 # Configurar nombre de usuario
 git config --global user.name "Tu Nombre"
@@ -76,13 +79,15 @@ git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice."
 git log -p -1
 
 
-  ______     _ ______ _____   _____ _____ _____ _____ ____    ___  
- |  ____|   | |  ____|  __ \ / ____|_   _/ ____|_   _/ __ \  |__ \ 
- | |__      | | |__  | |__) | |      | || |      | || |  | |    ) |
- |  __| _   | |  __| |  _  /| |      | || |      | || |  | |   / / 
- | |___| |__| | |____| | \ \| |____ _| || |____ _| || |__| |  / /_ 
- |______\____/|______|_|  \_\\_____|_____\_____|_____\____/  |____|
-                                                                   
+#    ______        _   ______   _____     _____   _____    _____   _____    ____      ___  
+#   |  ____|      | | |  ____| |  __ \   / ____| |_   _|  / ____| |_   _|  / __ \    |__ \ 
+#   | |__         | | | |__    | |__) | | |        | |   | |        | |   | |  | |      ) |
+#   |  __|    _   | | |  __|   |  _  /  | |        | |   | |        | |   | |  | |     / / 
+#   | |____  | |__| | | |____  | | \ \  | |____   _| |_  | |____   _| |_  | |__| |    / /_ 
+#   |______|  \____/  |______| |_|  \_\  \_____| |_____|  \_____| |_____|  \____/    |____|
+#                                                                                          
+#                                                                                          
+
                                                                    
 
 
@@ -146,14 +151,17 @@ git remote add https://github.com/iRoot13x18/Libro
 git push 
 
 
-  ______     _ ______ _____   _____ _____ _____ _____ ____    ____  
- |  ____|   | |  ____|  __ \ / ____|_   _/ ____|_   _/ __ \  |___ \ 
- | |__      | | |__  | |__) | |      | || |      | || |  | |   __) |
- |  __| _   | |  __| |  _  /| |      | || |      | || |  | |  |__ < 
- | |___| |__| | |____| | \ \| |____ _| || |____ _| || |__| |  ___) |
- |______\____/|______|_|  \_\\_____|_____\_____|_____\____/  |____/ 
-                                                                    
-                                                                    
+#    ______        _   ______   _____     _____   _____    _____   _____    ____      ____  
+#   |  ____|      | | |  ____| |  __ \   / ____| |_   _|  / ____| |_   _|  / __ \    |___ \ 
+#   | |__         | | | |__    | |__) | | |        | |   | |        | |   | |  | |     __) |
+#   |  __|    _   | | |  __|   |  _  /  | |        | |   | |        | |   | |  | |    |__ < 
+#   | |____  | |__| | | |____  | | \ \  | |____   _| |_  | |____   _| |_  | |__| |    ___) |
+#   |______|  \____/  |______| |_|  \_\  \_____| |_____|  \_____| |_____|  \____/    |____/ 
+#                                                                                           
+#                                                                                           
+
+
+                                                                                                                                    
 # Crear una nueva rama llamada "bibliografia"
 git branch bibliografia
 
@@ -235,5 +243,113 @@ git commit -m "Resuelto conflicto de bibliografía."
 
 # Mostrar la historia del repositorio incluyendo todas las ramas
 git log --all --graph --oneline
+
+#    ______        _   ______   _____     _____   _____    _____   _____    ____      _____ 
+#   |  ____|      | | |  ____| |  __ \   / ____| |_   _|  / ____| |_   _|  / __ \    | ____|
+#   | |__         | | | |__    | |__) | | |        | |   | |        | |   | |  | |   | |__  
+#   |  __|    _   | | |  __|   |  _  /  | |        | |   | |        | |   | |  | |   |___ \ 
+#   | |____  | |__| | | |____  | | \ \  | |____   _| |_  | |____   _| |_  | |__| |    ___) |
+#   |______|  \____/  |______| |_|  \_\  \_____| |_____|  \_____| |_____|  \____/    |____/ 
+#                                                                                           
+#            
+
+# Eliminar la última línea del fichero indice.txt y guardarlo.
+sed -i '$ d' indice.txt
+
+# Comprobar el estado del repositorio.
+git status
+
+# Deshacer los cambios realizados en el fichero indice.txt para volver a la versión anterior del fichero.
+git checkout -- indice.txt
+
+# Volver a comprobar el estado del repositorio.
+git status
+
+# Eliminar la última línea del fichero indice.txt y guardarlo.
+sed -i '$ d' indice.txt
+
+# Añadir los cambios a la zona de intercambio temporal.
+git add indice.txt
+
+# Comprobar de nuevo el estado del repositorio.
+git status
+
+# Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+git reset HEAD indice.txt
+
+# Comprobar de nuevo el estado del repositorio.
+git status
+
+# Deshacer los cambios realizados en el fichero indice.txt para volver a la versión anterior del fichero.
+git checkout -- indice.txt
+
+# Volver a comprobar el estado del repositorio.
+git status
+
+                                                                               
+# Eliminar la última línea del fichero indice.txt y guardarlo.
+sed -i '$ d' indice.txt
+
+# Eliminar el fichero capitulos/capitulo3.txt.
+rm capitulos/capitulo3.txt
+
+# Añadir un fichero nuevo capitulos/capitulo4.txt vacío.
+touch capitulos/capitulo4.txt
+
+# Añadir los cambios a la zona de intercambio temporal.
+git add indice.txt capitulos/capitulo3.txt capitulos/capitulo4.txt
+
+# Comprobar de nuevo el estado del repositorio.
+git status
+
+# Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+git reset HEAD indice.txt capitulos/capitulo3.txt capitulos/capitulo4.txt
+
+# Comprobar de nuevo el estado del repositorio.
+git status
+
+# Deshacer los cambios realizados para volver a la versión del repositorio.
+git checkout -- indice.txt capitulos/capitulo3.txt capitulos/capitulo4.txt
+
+# Volver a comprobar el estado del repositorio.
+git status
+
+# Eliminar la última línea del fichero indice.txt y guardarlo.
+sed -i '$ d' indice.txt
+
+# Eliminar el fichero capitulos/capitulo3.txt.
+rm capitulos/capitulo3.txt
+
+# Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje "Borrado accidental."
+git add indice.txt capitulos/capitulo3.txt
+git commit -m "Borrado accidental."
+
+# Comprobar el historial del repositorio.
+git log
+
+# Deshacer el último commit pero mantener los cambios anteriores en el directorio de trabajo y la zona de intercambio temporal.
+git reset --soft HEAD^
+
+# Comprobar el historial y el estado del repositorio.
+git log
+git status
+
+# Volver a hacer el commit con el mismo mensaje de antes.
+git commit -m "Borrado accidental."
+
+# Deshacer el último commit y los cambios anteriores del directorio de trabajo volviendo a la versión anterior del repositorio.
+git reset --hard HEAD^
+
+# Comprobar de nuevo el historial y el estado del repositorio.
+git log
+git status
+
+
+
+
+
+
+
+
 
 
