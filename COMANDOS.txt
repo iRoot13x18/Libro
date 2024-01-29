@@ -244,6 +244,38 @@ git commit -m "Resuelto conflicto de bibliografía."
 # Mostrar la historia del repositorio incluyendo todas las ramas
 git log --all --graph --oneline
 
+ _____   ___ ___________  _____ _____ _____ _____ _____     ___ 
+|  ___| |_  |  ___| ___ \/  __ \_   _/  __ \_   _|  _  |   /   |
+| |__     | | |__ | |_/ /| /  \/ | | | /  \/ | | | | | |  / /| |
+|  __|    | |  __||    / | |     | | | |     | | | | | | / /_| |
+| |___/\__/ / |___| |\ \ | \__/\_| |_| \__/\_| |_\ \_/ / \___  |
+\____/\____/\____/\_| \_| \____/\___/ \____/\___/ \___/      |_/
+
+# Clonar repositorio
+git remote add github https://github.com/iRoot13x18/libro-git
+
+# Listar conexiones remotas
+git remote -v
+
+# Subir cambios a GitHub
+git push github master
+
+# Copiamos la URL de mi compañero David
+git clone https://github.com/DavidRec1/repositorio2asir
+
+# Realizar cambios en el repositorio
+echo -e "iRoot13x18\domenicorosasr@gmail.com" >> autores.txt
+
+# Añadir todos los archivos
+git add .
+
+# Hacer cambios
+git commit -m "Añadido nuevo autor"
+
+# Subir cambios a GitHub
+git push origin master
+
+
 #    ______        _   ______   _____     _____   _____    _____   _____    ____      _____ 
 #   |  ____|      | | |  ____| |  __ \   / ____| |_   _|  / ____| |_   _|  / __ \    | ____|
 #   | |__         | | | |__    | |__) | | |        | |   | |        | |   | |  | |   | |__  
